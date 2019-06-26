@@ -1418,6 +1418,11 @@
     "@nuxtjs/meta" "^2.6.0"
     "@nuxtjs/workbox" "^2.6.0"
 
+"@nuxtjs/robots@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/robots/-/robots-2.2.0.tgz#294b8d803820fff383f73f723f43910b73e39cab"
+  integrity sha512-RAAO8CSwfG3ijWTQmn6WCRZ32g201rM53H3+SfyzwMjQIeaSoI5RPXNNNTzHlQgWSS0mQYYmq0yAwXxBygOIMw==
+
 "@nuxtjs/workbox@^2.6.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/workbox/-/workbox-2.6.0.tgz#eb057e7cbddc8f50bc181a5af9795cc93bd774d8"
@@ -2344,6 +2349,11 @@ babel-plugin-transform-object-rest-spread@^6.26.0:
   dependencies:
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.26.0"
+
+babel-plugin-transform-remove-console@^6.9.4:
+  version "6.9.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-console/-/babel-plugin-transform-remove-console-6.9.4.tgz#b980360c067384e24b357a588d807d3c83527780"
+  integrity sha1-uYA2DAZzhOJLNXpYjYB9PINSd4A=
 
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"

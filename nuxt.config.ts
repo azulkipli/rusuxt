@@ -16,7 +16,7 @@ const config: NuxtConfig = {
       { charset: 'utf-8' },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, user-scalable=no'
+        content: 'width=device-width, initial-scale=1'
       },
       { hid: 'description', name: 'description', content: pkg.description },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
@@ -61,13 +61,24 @@ const config: NuxtConfig = {
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/spectre.css/dist/spectre.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://unpkg.com/spectre.css/dist/spectre-exp.min.css'
       }
+      //   {
+      //     rel: 'stylesheet',
+      //     href: 'https://unpkg.com/spectre.css/dist/spectre-exp.min.css'
+      //   }
       // { rel: 'apple-touch-startup-image', href: '/splash/splash-1125x2436.png', media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)' },
     ]
+  },
+  router: {
+    // To disable prefetching, uncomment the line
+    prefetchLinks: true,
+    // Activate prefetched class (default: false)
+    // Used to display the check mark next to the prefetched link
+    linkPrefetchedClass: 'link-prefetched'
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: ''
   },
   loading: {
     color: '#D4B483',
