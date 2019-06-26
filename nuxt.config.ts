@@ -52,8 +52,8 @@ const config: NuxtConfig = {
     ],
     noscript: [
       {
-        innerHTML: 'This website requires JavaScript.',
-        body: true
+        innerHTML: 'This website requires JavaScript.'
+        // body: true
       }
     ],
     link: [
@@ -86,12 +86,15 @@ const config: NuxtConfig = {
     height: '5px'
   },
   manifest: {
+    lang: 'id',
     name: 'rusuxt',
+    display: 'standalone',
     theme_color: '#125E8A'
   },
   modules: [
-    '@nuxtjs/axios'
-    // '@nuxtjs/pwa',
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    '@nuxtjs/robots'
     // '@nuxtjs/vuetify',
   ],
   axios: {
