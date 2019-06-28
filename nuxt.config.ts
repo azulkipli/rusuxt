@@ -25,7 +25,7 @@ const config: NuxtConfig = {
         content: 'black-translucent'
       },
       { hid: 'og:image', property: 'og:image', content: '/blackribs.png' },
-      { hid: 'og:title', property: 'og:title', content: 'RusukApp' },
+      { hid: 'og:title', property: 'og:title', content: 'RusuxtApp' },
       {
         hid: 'og:description',
         property: 'og:description',
@@ -42,7 +42,7 @@ const config: NuxtConfig = {
         name: 'twitter:image:src',
         content: '/blackribs.png'
       },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'RusukApp' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'RusuxtApp' },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
@@ -58,10 +58,10 @@ const config: NuxtConfig = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://unpkg.com/spectre.css/dist/spectre.min.css'
-      }
+      // {
+      //   rel: 'stylesheet',
+      //   href: 'https://unpkg.com/spectre.css/dist/spectre.min.css'
+      // }
       //   {
       //     rel: 'stylesheet',
       //     href: 'https://unpkg.com/spectre.css/dist/spectre-exp.min.css'

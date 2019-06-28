@@ -5,9 +5,8 @@
       <h1 class="title">
         rusuxt
       </h1>
-      <h2 class="subtitle">
-        NuxtJS skeleton app with typescript
-      </h2>
+      <Hello :message="msgHello" />
+      
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
@@ -20,12 +19,14 @@
           GitHub
         </a>
       </div>
+  
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import {
+  Action,
   Component,
   Inject,
   Model,
@@ -34,9 +35,21 @@ import {
   Vue,
   Watch
 } from 'nuxt-property-decorator'
+
+import Logo from '~/components/Logo.vue'
+import Hello from '~/components/Hello.vue'
+import Counter from '~/components/Counter.vue'
+
+// Dynamic import components
+// const Logo = () => import('~/components/Logo.vue')
+// const Hello = () => import('~/components/Hello.vue')
+// const Counter = () => import('~/components/Counter.vue')
+
 @Component({
   components: {
-    Logo: () => import('~/components/Logo.vue')
+    Logo,
+    Hello,
+    Counter
   }
   // async asyncData () {
   //   let { data } = await axios.get(`https://my-api/posts`)
@@ -45,7 +58,18 @@ import {
   //   }
   // }
 })
-export default class PageIndex extends Vue {}
+export default class PageIndex extends Vue {
+  data(){
+    return { msgHello : "This is skeleton nuxtjs app with typescript" }
+  }
+  
+  @Action('counter/add') addToCounter: any
+  counter = 1
+  submitAdd () {
+    this.addToCounter(Number(this.counter))
+    // this.counter = 1
+  }
+}
 </script>
 
 
