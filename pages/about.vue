@@ -5,8 +5,11 @@
         About
       </h1>
       <h2 class="subtitle">
-        Abput page here
+        About page here
       </h2>
+      <div class="links">
+        <nuxt-link to="/" class="button--green">Home</nuxt-link>        
+      </div>
     </div>
   </div>
 </template>
