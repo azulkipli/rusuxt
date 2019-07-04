@@ -109,7 +109,7 @@ const config: NuxtConfig = {
   // render option
   render: {
     bundleRenderer: {
-      shouldPreload: (file, type) => {
+      shouldPrefetch: (file, type) => {
         return ['style'].includes(type)
       }
     }
