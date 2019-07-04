@@ -49,7 +49,7 @@ import Counter from '~/components/Counter.vue'
 
 @Component({
   components: {
-    Logo,
+    // Logo,
     Hello,
     Counter
   }
