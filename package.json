@@ -2,7 +2,7 @@
   "name": "rusuxt",
   "version": "1.0.0",
   "description": "NuxtJS skeleton app with typescript",
-  "author": "azul",
+  "author": "azulkipli",
   "private": true,
   "scripts": {
     "test": "jest",

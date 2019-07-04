@@ -74,7 +74,7 @@ const config: NuxtConfig = {
   ** Global CSS
   */
  css: [
-  '~/assets/styles/global.css',
+  '@/assets/styles/global.css',
  ],
 
   router: {
@@ -100,21 +100,18 @@ const config: NuxtConfig = {
     theme_color: '#125E8A'
   },
   modules: [
-    // '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/robots'
     // '@nuxtjs/vuetify',
   ],
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-    // baseURL: '/api'
-  },
   // load nuxt plugin
   plugins: [],
   // render option
   render: {
     bundleRenderer: {
-      shouldPrefetch: (file, type) => ['script', 'style', 'font'].includes(type)
+      shouldPreload: (file, type) => {
+        return ['style'].includes(type)
+      }
     }
   },
   // build & generate option
