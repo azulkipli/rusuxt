@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <!-- <Logo /> -->
+      <Logo />
       <h1 class="title">
         rusuxt
       </h1>
@@ -38,7 +38,7 @@ import {
   Watch
 } from 'nuxt-property-decorator'
 
-// import Logo from '~/components/Logo.vue'
+import Logo from '~/components/Logo.vue'
 import Hello from '~/components/Hello.vue'
 import Counter from '~/components/Counter.vue'
 
@@ -49,7 +49,7 @@ import Counter from '~/components/Counter.vue'
 
 @Component({
   components: {
-    // Logo,
+    Logo,
     Hello,
     Counter
   }
