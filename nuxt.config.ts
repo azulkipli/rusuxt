@@ -69,6 +69,14 @@ const config: NuxtConfig = {
       // { rel: 'apple-touch-startup-image', href: '/splash/splash-1125x2436.png', media: '(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)' },
     ]
   },
+
+  /*
+  ** Global CSS
+  */
+ css: [
+  '~/assets/styles/global.css',
+ ],
+
   router: {
     // To disable prefetching, uncomment the line
     prefetchLinks: true,
@@ -101,7 +109,15 @@ const config: NuxtConfig = {
     // See https://github.com/nuxt-community/axios-module#options
     // baseURL: '/api'
   },
+  // load nuxt plugin
   plugins: [],
+  // render option
+  render: {
+    bundleRenderer: {
+      shouldPrefetch: (file, type) => ['script', 'style', 'font'].includes(type)
+    }
+  },
+  // build & generate option
   build: {
     extractCSS: true,
     optimizeCSS: true,
