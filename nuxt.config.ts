@@ -92,7 +92,7 @@ const config: NuxtConfig = {
     theme_color: '#125E8A'
   },
   modules: [
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxtjs/robots'
     // '@nuxtjs/vuetify',
